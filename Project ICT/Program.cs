@@ -9,7 +9,7 @@ class ESCControl
     static void Main(string[] args)
     {
         // Set up the serial port
-        serialPort = new SerialPort("COM3", 9600); // Replace "COM3" with your COM port
+        serialPort = new ("COM3", 9600); // Replace "COM3" with your COM port
         serialPort.Open();
 
         // Send PWM control signals
